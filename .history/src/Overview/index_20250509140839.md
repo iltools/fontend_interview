@@ -1,10 +1,10 @@
 ---
-group: 数据录入
-title: AutoComplete 自动完成
-order: 1
+nav: 组件
+title: 组件总览
+order: 0
 ---
 
-# AutoComplete 自动完成
+# 组件总览
 
 This is an example component of Vue SFC.
 
