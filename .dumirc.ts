@@ -1,11 +1,17 @@
 import { defineConfig } from 'dumi';
 import path from 'path';
 
+const getStatic = () => {
+  console.log(process.env.NODE_ENV, '当前环境')
+  return process.env.NODE_ENV === 'production' ? 'https://github.com/iltools/frontend_interview/' : '/'
+}
 export default defineConfig({
   apiParser: {},
   resolve: {
     entryFile: 'src/index.ts',
   },
+  base: getStatic(),
+  publicPath: getStatic(),
   alias: {
     '@articles': path.resolve(__dirname, 'articles'),
   },
@@ -17,6 +23,9 @@ export default defineConfig({
     // logo: '',
     // 显示字数
     showLineNum: true,
+    socialLinks: {
+      github: 'https://github.com/iltools/frontend_interview'
+    }
   },
   presets: [require.resolve('@dumijs/preset-vue')],
 });
