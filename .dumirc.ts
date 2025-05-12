@@ -1,9 +1,10 @@
 import { defineConfig } from 'dumi';
 import path from 'path';
 
+const repo = '/frontend_interview/';
 const getStatic = () => {
   console.log(process.env.NODE_ENV, '当前环境')
-  return process.env.NODE_ENV === 'production' ? 'https://iltools.github.io/frontend_interview/' : '/'
+  return process.env.NODE_ENV === 'production' ? `${repo}` : '/'
 }
 export default defineConfig({
   apiParser: {},
