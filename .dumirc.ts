@@ -3,7 +3,7 @@ import path from 'path';
 
 const getStatic = () => {
   console.log(process.env.NODE_ENV, '当前环境')
-  return process.env.NODE_ENV === 'production' ? 'https://github.com/iltools/frontend_interview/' : '/'
+  return process.env.NODE_ENV === 'production' ? 'https://iltools.github.io/frontend_interview/' : '/'
 }
 export default defineConfig({
   apiParser: {},
