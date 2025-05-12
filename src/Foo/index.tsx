@@ -12,6 +12,6 @@ export const Foo = defineComponent({
     },
   },
   setup({ title }) {
-    return () => <div className="foo">{title}</div>;
+    return () => <div class="foo">{title}</div>;
   },
 });
