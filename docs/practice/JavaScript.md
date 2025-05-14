@@ -1,6 +1,7 @@
 ---
 nav: 场景题
 order: 1
+toc: content
 ---
 
 ## 前端如何实现截图?

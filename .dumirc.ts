@@ -3,9 +3,9 @@ import path from 'path';
 
 const repo = '/frontend_interview/';
 const getStatic = () => {
-  console.log(process.env.NODE_ENV, '当前环境')
-  return process.env.NODE_ENV === 'production' ? `${repo}` : '/'
-}
+  console.log(process.env.NODE_ENV, '当前环境');
+  return process.env.NODE_ENV === 'production' ? `${repo}` : '/';
+};
 export default defineConfig({
   apiParser: {},
   resolve: {
@@ -24,9 +24,10 @@ export default defineConfig({
     // logo: '',
     // 显示字数
     showLineNum: true,
+    footer: 'Powered by iltools',
     socialLinks: {
-      github: 'https://github.com/iltools/frontend_interview'
-    }
+      github: 'https://github.com/iltools/frontend_interview',
+    },
   },
   presets: [require.resolve('@dumijs/preset-vue')],
 });

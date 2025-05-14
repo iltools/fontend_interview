@@ -33,7 +33,8 @@ defineSlots<{
 }>();
 
 const emit = defineEmits<{
-  (e: 'click', event: MouseEvent): void
+  (e: 'click', event: MouseEvent): void,
+  (e: 'dbclick', event: MouseEvent): void,
 }>();
 
 function handleClick(e: MouseEvent) {
