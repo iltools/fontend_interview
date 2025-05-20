@@ -34,24 +34,28 @@ getData({ order: 2 });
 
 ### 解决方法
 
-### 对请求按钮加上 loading
+#### 对请求按钮加上 loading
 
 > 一般做法，我们会想到这个，当发送一次请求的时候，不让用户操作，直到请求返回来后，才能执行。
 
-### 接口返回当前请求页和前端选中页对比
+#### 接口返回当前请求页和前端选中页对比
 
 > 需要后端返回当前请求页，前端处理返回的页码与当前页面选中的页面对比，如果是同一页，则处理数据，反之不处理。缺点很明显，第一不通用，第二要接口界入。
 
-### 取消请求
+#### 取消请求
 
-#### axios 中的 cancelToken（废弃）/AbortController
+##### axios 中的 cancelToken（废弃）/AbortController
 
-#### rxjs 中的 switchMap
+##### rxjs 中的 switchMap
 
-#### XMLHttpRequest 中的 abort
+##### XMLHttpRequest 中的 abort
 
-#### fetch 的 AbortController
+##### fetch 的 AbortController
 
-### 忽略请求
+#### 忽略请求
 
 参考这个库：https://github.com/slorber/awesome-only-resolves-last-promise/
+
+## 退出浏览器之前，发送积压的埋点数据请求，该如何做？
+
+## 防止前端页面重复请求
