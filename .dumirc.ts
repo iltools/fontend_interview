@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
+import { defineThemeConfig } from 'dumi-theme-chakra';
 import path from 'path';
-
 const repo = '/frontend_interview/';
 const getStatic = () => {
   console.log(process.env.NODE_ENV, '当前环境');
@@ -28,6 +28,7 @@ export default defineConfig({
     socialLinks: {
       github: 'https://github.com/iltools/frontend_interview',
     },
+    ...defineThemeConfig({}),
   },
   presets: [require.resolve('@dumijs/preset-vue')],
 });
